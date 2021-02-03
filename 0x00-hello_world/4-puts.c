@@ -4,6 +4,6 @@ int main(void)
 /** Descriptor out of necessity*/
 {
 puts("Programming is like building a multilingual puzzle");
-getchar()
+getchar();
 return (0);
 }
