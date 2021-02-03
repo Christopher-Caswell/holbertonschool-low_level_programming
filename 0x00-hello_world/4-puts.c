@@ -1,7 +1,9 @@
 #include <stdio.h>
-/**
-* Descriptor
+
+/***
+*Descriptor
 */
+
 int main(void)
 /** Descriptor out of necessity*/
 {
