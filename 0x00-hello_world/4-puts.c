@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-/***
-*Descriptor
+/**
+* main- opening function
+*
+* return- closing function, declaring to set back to main
+*
 */
 
 int main(void)
-/** Descriptor out of necessity*/
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
