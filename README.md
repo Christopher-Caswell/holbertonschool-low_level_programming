@@ -1,1 +1,1 @@
-# holbertonschool-low_level_programming
+The basics of C day 1
