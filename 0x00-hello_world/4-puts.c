@@ -3,8 +3,7 @@
 /**
 * main- opening function
 *
-* return- closing function, declaring to set back to main
-*
+* Return: closing function, declaring to set back to main
 */
 
 int main(void)
