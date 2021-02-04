@@ -8,15 +8,18 @@
 
 int main(void)
 {
-int intType;
-float floatType;
-double doubleType;
-char charType;
 
-printf("Size of int: %zu bytes\n");
-printf("Size of float: %zu bytes\n");
-printf("Size of double: %zu bytes\n");
-printf("Size of char: %zu byte\n");
+int a1;
+float a2;
+double a3;
+char a4;
+long long a5;
+
+printf("size of long long: %lu bytes\n", sizeof(a5));
+printf("Size of int: %lu bytes\n", sizeof(a1));
+printf("Size of float: %lu bytes\n", sizeof(a2));
+printf("Size of double: %lu bytes\n", sizeof(a3));
+printf("Size of char: %lu byte\n", sizeof(a4));
 
 return (0);
 }
