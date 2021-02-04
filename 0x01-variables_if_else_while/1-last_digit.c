@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-* main- the beginning of the function
+* main - the beginning of the function
 *
 * Return: 0, program stops after one succesful run
 */
@@ -22,11 +22,10 @@ if (l4 > 5)
 printf("Last digit of %d is %d and is greater than 5\n", n, l4);
 
 else
-(l4 = 0)
+(l4 == 0)
 printf("Last digit of %d is %d and is 0\n", n, l4);
 
 else
-(l4 < 6)
 printf("Last digit of %d is %d and is less than 6 and not 0", n, l4);
 
 return (0);
