@@ -18,5 +18,5 @@ printf("Size of float: %zu bytes\n");
 printf("Size of double: %zu bytes\n");
 printf("Size of char: %zu byte\n");
 
-return 0;
+return (0);
 }
