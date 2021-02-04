@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+* main- the beginning of the functioon
+*
+* Return: 0, program stops after one succesful run
+*/
+
+int main(void)
+{
+int n;
+int l4;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+
+l4 = (n % 10);
+
+if (l4 > 5)
+printf("Last digit of %d is %d and is greater than 5\n", n, l4);
+
+else
+(l4 = 0)
+printf("Last digit of %d is %d and is 0\n", n, l4);
+
+else
+(l4 < 6)
+printf("Last digit of %d is %d and is less than 6 and not 0", n, l4);
+
+return (0);
+}
