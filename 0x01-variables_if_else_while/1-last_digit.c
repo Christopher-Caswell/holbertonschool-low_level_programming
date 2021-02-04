@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-* main- the beginning of the functioon
+* main- the beginning of the function
 *
 * Return: 0, program stops after one succesful run
 */
