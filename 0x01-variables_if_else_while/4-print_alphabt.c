@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+/**
+* main - function open
+*
+* Return: 0
+*/
+
+int main(void)
+
+{
+
+char i;
+
+for i = (i = <= z);
+
+{
+
+if (i == "q" || i == "e")
+
+continue;
+
+else
+
+putchar(i);
+
+}
+
+putchar(\n);
+
+return (0);
+
+}
