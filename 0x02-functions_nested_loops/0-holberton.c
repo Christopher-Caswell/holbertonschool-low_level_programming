@@ -7,38 +7,17 @@
 */
 
 int main(void)
-
 {
 
-char a[9];
-
-int q;
-
-
-q = 0;
-
-a[0] = 'H';
-a[1] = 'o';
-a[2] = 'l';
-a[3] = 'b';
-a[4] = 'e';
-a[5] = 'r';
-a[6] = ('t');
-a[7] = 'o';
-a[8] = 'n';
-
-while (q <= 9)
-
-{
-
-
-_putchar(a[q]);
-
-q++;
-
-}
-
-
+_putchar('H');
+_putchar('o');
+_putchar('l');
+_putchar('b');
+_putchar('e');
+_putchar('r');
+_putchar('t');
+_putchar('o');
+_putchar('n');
 _putchar('\n');
 
 return (0);
