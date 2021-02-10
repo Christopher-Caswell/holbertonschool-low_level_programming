@@ -1,44 +1,42 @@
-#include <holberton.h>
+#include "holberton.h"
 
 /**
 * main - print the alphabet 10x
-* 
-* Return: 0, stop 
+*
+* Return: 0, stop
 *
 */
 
-int main(void)
-
-
+void print_alphabet_x10(void)
 {
 
-/**  write a function that prints the alphabet -10x, in lowercase, followed by a new line-*/
+/**
+* write a function that prints the alphabet -10x,
+*in lowercase, followed by a new line
+*/
 
 char x;
+char y;
 
-x = 'a';
-
-int y;
-
-
-for (y = 0; < 10; y++);
+y = 0;
 
 
+while (y = 0; < 10)
 {
 
 
-for (x = "a"; <= "z"; x++)
+while (x = "a"; <= "z")
+{
+
 
 _putchar(x);
+x++;
+}
 
-
+_putchar(\n);
+y++;
 }
 
 
-_putchar(\n);
-
-
 return (0);
-
-
 }
