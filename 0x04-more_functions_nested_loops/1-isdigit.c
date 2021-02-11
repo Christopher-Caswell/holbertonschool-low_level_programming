@@ -14,9 +14,7 @@ int _isdigit(int c)
 */
 
 
-char c;
-
-if (char c >= 48 && c <= 57)
+if (c >= 48 && c <= 57)
 {
 
 return (1);
