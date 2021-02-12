@@ -16,12 +16,10 @@ int y;
 if (n > 0)
 {
 
-for
-(x = 1; x <= n; x++)
+for (x = 1; x <= n; x++)
 {
 
-for
-(y = 0; y < x - 1; y++)
+for (y = 0; y < x - 1; y++)
 
 _putchar(' ');
 _putchar('\\');
