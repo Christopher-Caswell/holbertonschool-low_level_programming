@@ -22,8 +22,8 @@ char a;
 
 for (a = 97; a <= 122; a++)
 
-putchar(a);
-putchar('\n');
+_putchar(a);
+_putchar('\n');
 
 return;
 
