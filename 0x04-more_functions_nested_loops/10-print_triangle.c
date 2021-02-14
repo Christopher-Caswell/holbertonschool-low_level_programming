@@ -17,14 +17,14 @@ for (y = 1; y <= size; y++)
 { /* open 3*/
 if (y <= (size - x))
 { /* open 4*/
-putchar(' ');
+_putchar(' ');
 } /* close 1*/
 else
 { /* open 5*/
-putchar('#');
+_putchar('#');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 return;
 }
