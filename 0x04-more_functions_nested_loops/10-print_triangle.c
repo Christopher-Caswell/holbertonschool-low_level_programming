@@ -8,12 +8,13 @@
 
 void print_triangle(int size)
 { /* open 1*/
-
+char x, y;
 if (size < 0)
 {
 _putchar('\n');
 }
-char x, y;
+else
+{
 for (x = 1; x <= size; x++)
 { /* open 2*/
 for (y = 1; y <= size; y++)
@@ -28,6 +29,7 @@ _putchar('#');
 }
 }
 _putchar('\n');
+}
 }
 return;
 }
