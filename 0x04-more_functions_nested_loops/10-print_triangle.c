@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - this. what it says. proto
- *
+ * @size: int
  * Return: 1 and done
  */
 
