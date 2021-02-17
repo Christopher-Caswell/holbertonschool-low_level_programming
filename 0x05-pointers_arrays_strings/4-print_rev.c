@@ -9,9 +9,9 @@
 void print_rev(char *s)
 {
 
-int x, y;
-
-y = _strlen[s];
+int x;
+int y;
+y = _strlen(s);
 
 for (x = y - 1; x >= 0; x--)
 {
@@ -23,9 +23,26 @@ putchar('\n');
 
 return;
 }
+
+
 /**
- * _strlen - yes
- * @s: variable used
- * Return: null
+ * _strlen - return the length of the string
+ *@s: the length of the string
+ *
+ * Return: the length(x)
  */
+
 int _strlen(char *s)
+{
+
+int x;
+x = 0;
+
+while (*(s + x) != '\0')
+{
+
+x++;
+}
+
+return (x);
+}
