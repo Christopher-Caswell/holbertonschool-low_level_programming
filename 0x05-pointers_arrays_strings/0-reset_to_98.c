@@ -9,13 +9,6 @@
 void reset_to_98(int *n)
 {
 
-int x;
+*n = 98
 
-for (x == &n)
-{
-
-putchar(x);
-}
-
-return;
 }
