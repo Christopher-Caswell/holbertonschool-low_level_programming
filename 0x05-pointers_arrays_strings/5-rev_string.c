@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 
 /**
  * rev_string - we are reversing a string to output
@@ -33,7 +33,7 @@ return;
 * Return: the length(x)
  */
 
- int _strlen(char *s)
+int _strlen(char *s)
 {
 
 int x;
