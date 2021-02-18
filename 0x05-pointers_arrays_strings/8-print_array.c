@@ -19,7 +19,8 @@ for (y = 0; y < (n - 1); y++)
 printf("%d, ", a[y]);
 }
 
-printf("%d\n", a[n - 1]);
+printf("%d", a[n - 1]);
+printf("\n");
 
 return;
 }
