@@ -19,7 +19,7 @@ for (x = (y - 1); x >= 0; x--)
 _putchar(s[x]);
 
 }
-putchar('\n');
+_putchar('\n');
 
 return;
 }

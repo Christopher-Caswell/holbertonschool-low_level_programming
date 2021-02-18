@@ -11,25 +11,53 @@ void puts_half(char *str)
 
 int x, y;
 x = _strlen(str);
-y < '\0';
+
+
+for (y = 0 ; y < x; y++)
+{
 
 /* Expectation */
 if (x % 2 == 0)
 { /* 2 */
 
 y = (x / 2);
-putchar (y);
-y++;
+_putchar(str[y]);
 }
 
 /* Alternative */
 else if (x % 2 != 0)
 { /* 3 */
 
-y = ((x = 1) / 2);
-putchar(y);
-y++;
+y = ((x + 1) / 2);
+_putchar(str[y]);
+}
+
 }
 
 return;
+}
+
+
+#include "holberton.h"
+
+/**
+ * _strlen - return the length of the string
+ *@s: the length of the string
+ *
+ * Return: the length(x)
+ */
+
+int _strlen(char *s)
+{
+
+int x;
+x = 0;
+
+while (*(s + x) != '\0')
+{
+
+x++;
+}
+
+return (x);
 }
