@@ -13,10 +13,10 @@ void print_array(int *a, int n)
 
 int y;
 
-for (y = 0; y < (n - 1); y++)
+for (y = 1; y < n; y++)
 {
 
-printf("%d, ", a[y]);
+printf("%d, ", a[y - 1]);
 }
 
 printf("%d", a[n - 1]);
