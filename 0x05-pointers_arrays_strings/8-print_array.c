@@ -11,15 +11,20 @@
 void print_array(int *a, int n)
 {
 
-int y;
+int x;
 
-for (y = 1; y < n; y++)
+for (x = 0; x <= n - 1; x++)
 {
 
-printf("%d, ", a[y - 1]);
+printf("%d", a[x]);
+
+if (x != n - 1)
+{
+
+printf(", ");
 }
 
-printf("%d", a[n - 1]);
+}
 printf("\n");
 
 return;
