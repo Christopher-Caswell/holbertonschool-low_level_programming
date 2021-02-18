@@ -13,7 +13,7 @@ int x;
 int y;
 y = _strlen(s);
 
-for (x = y - 1; x >= 0; x--)
+for (x = (y - 1); x >= 0; x--)
 {
 
 _putchar(s[x]);
