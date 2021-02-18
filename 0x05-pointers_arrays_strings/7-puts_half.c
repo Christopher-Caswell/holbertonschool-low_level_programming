@@ -13,14 +13,13 @@ int x, y;
 x = _strlen(str);
 
 
-for (y = 0 ; y < x; y++)
-{
 
 /* Expectation */
 if (x % 2 == 0)
 { /* 2 */
 
-y = (x / 2);
+for (y = (x / 2); y <= x; y++)
+
 _putchar(str[y]);
 }
 
@@ -28,12 +27,11 @@ _putchar(str[y]);
 else if (x % 2 != 0)
 { /* 3 */
 
-y = ((x + 1) / 2);
+for (y = ((x + 1) / 2); y <= x; y++)
+
 _putchar(str[y]);
 }
-
-}
-
+_putchar('\n');
 return;
 }
 
