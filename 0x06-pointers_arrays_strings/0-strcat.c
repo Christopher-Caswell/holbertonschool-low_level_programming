@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 int x, y;
 x = _strlen(dest);
 
-for (y = 0; src[y] != 00;x++, y++)
+for (y = 0; src[y] != 00; x++, y++)
 {
 dest[x] = src[y];
 }
