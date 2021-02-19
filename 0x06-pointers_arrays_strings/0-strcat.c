@@ -3,22 +3,20 @@
  * _strcat - catenates two strings
  * @dest: variable
  * @src: variable
- * Return: end
+ * Return: dest
 */
 char *_strcat(char *dest, char *src)
 {
 
 int x, y;
-char z;
-z = _strlen(src);
+x = _strlen(dest);
 
-for (x = 0; dest[x] <= z; x++)
+for (y = 0; src[y] != 00;x++, y++)
 {
+dest[x] = src[y];
 }
-for (y = 0; src[y] != 00; y++)
-{
-dest[x + y] = src[x];
-}
+dest[x] = 00;
+
 return (dest);
 }
 /**
