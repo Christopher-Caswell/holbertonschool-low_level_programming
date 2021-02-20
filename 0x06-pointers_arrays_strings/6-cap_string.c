@@ -14,7 +14,7 @@ for (bangarang = 0; django[bangarang] != 00; bangarang++)
 {
 
 if ((django[bangarang] == ('\n')) || (django[bangarang] == (' ')) ||
-(django[bangarang] == 9) || 
+(django[bangarang] == 9) ||
 (django[bangarang] == 44) || (django[bangarang] == 59) ||
 (django[bangarang] == 46) || (django[bangarang] == 33) ||
 (django[bangarang] == 63) || (django[bangarang] == 34) ||
