@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * leet - 1337 y0
+ * rot13 - 1337 y0
  * @array: 743 4rr4/
  * Return: 743 1|\|f0
  */
