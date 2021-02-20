@@ -10,7 +10,15 @@ char *cap_string(char *django)
 {
 int bangarang;
 
-for (bangarang = 0; django[bangarang] != 00; bangarang++)
+bangarang = 0;
+
+if (django[0] >= 97 && django[0] <= 122)
+{
+
+django[0] = (django[0] - 32);
+}
+
+for (; django[bangarang] != 00; bangarang++)
 {
 
 if ((django[bangarang] == ('\n')) || (django[bangarang] == (' ')) ||
