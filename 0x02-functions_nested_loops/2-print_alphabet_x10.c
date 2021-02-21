@@ -20,7 +20,7 @@ char y;
 
 y = 0;
 
-while (y < 10)
+while  (y < 10)
 {
 
 x = 'a';
@@ -28,12 +28,13 @@ x = 'a';
 while (x <= 'z')
 {
 
-
 _putchar(x);
+
 x++;
 }
 
 _putchar('\n');
+
 y++;
 }
 
