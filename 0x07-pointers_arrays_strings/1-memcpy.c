@@ -16,7 +16,7 @@ unsigned int x;
 for (x = 0; x <= n; x++)
 {
 
-dest = src;
+dest[x] = src[x];
 }
 
 return (dest);
