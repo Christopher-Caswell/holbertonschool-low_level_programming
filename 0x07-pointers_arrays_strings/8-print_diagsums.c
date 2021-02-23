@@ -1,0 +1,30 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * print_diagsums - does what it says
+ * @a: the array to read
+ * @size: the length of the array
+ * Return: the printouts of x, y
+ */
+
+void print_diagsums(int *a, int size)
+{
+
+int x, y, z;
+
+for (x = 0; x < size * size; x += 1 + size)
+{
+
+y += a[x];
+
+}
+
+for (x = size - 1, y = 0; x < size * size - size + 1; x += size - 1)
+{
+
+z += a[x];
+}
+
+printf("%d, %d\n", y, z);
+}
