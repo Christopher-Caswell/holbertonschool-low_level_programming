@@ -15,7 +15,7 @@ unsigned int x;
 for (; *haystack != 00; haystack++)
 {/* 2*/
 
-for (x = 0; needle[x] == haystack[x]; x++)
+for (x = 0; needle[x] != 00; x++)
 {/* 3*/
 
 if (haystack[x] != needle[x])
@@ -23,12 +23,12 @@ if (haystack[x] != needle[x])
 
 break;
 }
-
+}
 if (needle[x] == 00)
 {/* 5*/
 
 return (haystack);
-}
+
 }
 }
 return (NULL);
