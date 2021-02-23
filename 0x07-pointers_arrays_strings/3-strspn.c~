@@ -1,0 +1,38 @@
+#include "holberton.h"
+
+/**
+ *
+ *
+ *
+ *
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+
+int x, y, z;
+
+for (y = 0; s[y] <= 00; y++)
+{
+
+z = 0;
+
+for (x = 0; accept[x] <= 00; x++)
+{
+
+if (s[y] == accept[x])
+{
+
+z = 1;
+break;
+}
+}
+
+if (z == 0)
+{
+
+break;
+}
+}
+return (y);
+}
