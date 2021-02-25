@@ -23,7 +23,7 @@ return (check1(0, 0, s1, s2));
  * @y: the variable location in string 2
  * @s1: string
  * @s2: string
- * Return: the proper results for read on above function
+ * Return: the proper results for compare in above function
  */
 
 int check1(int x, int y, char *s1, char *s2)
@@ -31,7 +31,7 @@ int check1(int x, int y, char *s1, char *s2)
 
 /*if the strings match, increment, if string 2 is an asterisk, check2*/
 if (s2[y] == '*')
-return (check1(x, ++y, s1, s2));
+return (check1(x, y++, s1, s2));
 /*if they dont match and check2 says anything other than yes, return to top*/
 if (s1[x] != s2[y])
 {
@@ -39,8 +39,8 @@ if (s1[x] != s2[y])
 if (s1[x] == 00)
 return (0);
 
-else if (check2(--y, s2) == 1)
-return (check1(++x, y, s1, s2));
+else if (check2(y--, s2) == 1)
+return (check1(x++, y, s1, s2));
 
 else
 return (0);
@@ -59,7 +59,7 @@ else
 return (0);
 }
 
-return (check1(++x, y, s1, s2));
+return (check1(x++, y++, s1, s2));
 }
 
 
@@ -80,9 +80,9 @@ int check2(int v, char *s2)
 if (s2[v] == '*')
 return (1);
 
-else if (v != '*')
+if (v == 0)
 return (0);
 
-return (check2(--v, s2));
+return (check2(v--, s2));
 
 }
