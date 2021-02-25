@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 
 /**
  * _sqrt_recursion - defining the rootable
@@ -16,7 +16,7 @@ return (nootnoot(0, n));
 /**
  * nootnoot - the identifier for x^y
  * @x: the pass
- * @y: the volume
+ * @n: the volume
  * Return: the variable passed into _sqrt_recursion
  */
 
