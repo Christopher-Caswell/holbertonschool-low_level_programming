@@ -7,11 +7,10 @@
  * Return: narg
  */
 
-int main(int argc, char *argv[])
+int main(int argc)
 {
 
-if (argc > 0)
-printf("%i\n", argc);
+printf("%i\n", argc - 1);
 
 return (0);
 }
