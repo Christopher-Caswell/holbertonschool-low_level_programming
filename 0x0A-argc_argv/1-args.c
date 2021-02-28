@@ -3,7 +3,6 @@
 /**
  * main - number of arguments passed
  * @argc: arguments volume
- * @argv: volume of strings
  * Return: narg
  */
 
