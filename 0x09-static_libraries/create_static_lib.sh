@@ -1,3 +1,4 @@
 #!/bin/bash
 gcc -c *.c
-ar liball.a *.o 
+ar rgc liball.a *.o 
+chmod 777 liball.a
