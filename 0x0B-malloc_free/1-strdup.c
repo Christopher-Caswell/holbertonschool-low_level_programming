@@ -13,7 +13,7 @@ char *_strdup(char *str)
 if (str == NULL)
 return (NULL);
 
-char *x = (char *)malloc(_strlen(str) + sizeof(char));
+char *x = (char *)malloc((_strlen(str) + 1) * sizeof(char));
 int y = 0;
 
 if (x == NULL)
@@ -26,7 +26,6 @@ x[y] = str[y];
 y++;
 }
 
-x[y] = 00;
 return (x);
 }
 
