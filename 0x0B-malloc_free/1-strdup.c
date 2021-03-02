@@ -19,13 +19,14 @@ unsigned int y = 0;
 if (x == NULL)
 return (NULL);
 
-while (str[y] != 00)
+while (str[y])
 {
 
 x[y] = str[y];
 y++;
 }
 
+x[y] = 00;
 return (x);
 }
 
