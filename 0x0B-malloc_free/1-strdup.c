@@ -10,14 +10,14 @@
 char *_strdup(char *str)
 {
 
-if (str == 00)
-return (00);
+if (str == NULL)
+return (NULL);
 
 char *x = (char *)malloc(_strlen(str) + sizeof(char));
 unsigned int y = 0;
 
-if (x == 00)
-return (00);
+if (x == NULL)
+return (NULL);
 
 while (str[y] != 00)
 {
