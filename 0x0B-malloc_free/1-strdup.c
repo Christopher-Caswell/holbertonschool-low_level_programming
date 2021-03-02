@@ -19,11 +19,10 @@ int y = 0;
 if (x == NULL)
 return (NULL);
 
-while (str[y])
+for (; str[y] != 00; y++)
 {
 
 x[y] = str[y];
-y++;
 }
 
 x[y] = 00;
