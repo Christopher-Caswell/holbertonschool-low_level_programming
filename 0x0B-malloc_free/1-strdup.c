@@ -26,6 +26,7 @@ x[y] = str[y];
 y++;
 }
 
+x[y] = 00;
 return (x);
 }
 
