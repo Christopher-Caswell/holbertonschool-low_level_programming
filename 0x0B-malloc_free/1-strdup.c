@@ -14,7 +14,7 @@ if (str == NULL)
 return (NULL);
 
 char *x = (char *)malloc(_strlen(str) + sizeof(char));
-unsigned int y = 0;
+int y = 0;
 
 if (x == NULL)
 return (NULL);
