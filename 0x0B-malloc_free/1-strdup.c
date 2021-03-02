@@ -13,7 +13,7 @@ char *_strdup(char *str)
 if (str == 00)
 return (00);
 
- char *x = (char *)malloc(_strlen(str) + sizeof(char));
+char *x = (char *)malloc(_strlen(str) + sizeof(char));
 unsigned int y = 0;
 
 if (x == 00)
