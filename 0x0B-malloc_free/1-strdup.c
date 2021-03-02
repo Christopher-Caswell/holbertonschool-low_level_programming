@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
+ * _strdup - duplicate string at str
+ * @str: the copy
+ * Return: the copy of str
  */
 
 char *_strdup(char *str)
