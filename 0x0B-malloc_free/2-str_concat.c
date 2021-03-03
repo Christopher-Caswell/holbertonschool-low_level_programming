@@ -17,13 +17,10 @@ y = 0;
 z1 = _strlen(s1);
 z2 = _strlen(s2);
 
-if (s1 == 00)
-return (00);
-
-if (s2 == 00)
-return (00);
-
 w = malloc(z1 + z2 + 1);
+
+if (z1 + z2 == 0)
+return (00);
 
 for (; x < z1; x++)
 {
@@ -36,6 +33,9 @@ for (; y <= z2; x++, y++)
 
 w[x] = s2[y];
 }
+
+if (w == 00)
+return (00);
 
 return (w);
 }
