@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdlib>
 
 /**
  * str_concat - catenate a pair of strings
