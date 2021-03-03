@@ -19,6 +19,12 @@ z2 = _strlen(s2);
 
 w = malloc(z1 + z2 + 1);
 
+if (s1 == 00)
+s1 = "";
+
+if (s2 == 00)
+s2 = "";
+
 for (; x < z1; x++)
 {
 
