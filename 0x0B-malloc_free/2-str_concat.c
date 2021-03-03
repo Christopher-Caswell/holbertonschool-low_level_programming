@@ -19,9 +19,6 @@ z2 = _strlen(s2);
 
 w = malloc(z1 + z2 + 1);
 
-if (z1 + z2 == 0)
-return (00);
-
 for (; x < z1; x++)
 {
 
