@@ -34,7 +34,7 @@ for (; x < z1; x++)
 w[x] = s1[x];
 }
 
-for (; y <= z2; x++, y++)
+for (; y < z2; x++, y++)
 {
 
 w[x] = s2[y];
