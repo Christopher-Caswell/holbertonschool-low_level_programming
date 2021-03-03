@@ -10,6 +10,12 @@
 char *str_concat(char *s1, char *s2)
 {
 
+if (s1 == 00)
+s1 = "";
+
+if (s2 == 00)
+s2 = "";
+
 char *w;
 int x, y, z1, z2;
 x = 0;
@@ -19,11 +25,8 @@ z2 = _strlen(s2);
 
 w = malloc(z1 + z2 + 1);
 
-if (s1 == 00)
-s1 = "";
-
-if (s2 == 00)
-s2 = "";
+if (w == 00)
+return (00);
 
 for (; x < z1; x++)
 {
