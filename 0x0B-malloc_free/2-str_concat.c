@@ -40,9 +40,6 @@ for (; y < z2; x++, y++)
 w[x] = s2[y];
 }
 
-if (w == 00)
-return (00);
-
 x = 00;
 return (w);
 }
