@@ -10,16 +10,16 @@
 char *str_concat(char *s1, char *s2)
 {
 
-if (s1 == 00)
-s1 = "";
-
-if (s2 == 00)
-s2 = "";
-
 char *w;
 int x, y, z1, z2;
 x = 0;
 y = 0;
+
+if (s1 == 00)
+return (00);
+if (s2 == 00)
+return (00);
+
 z1 = _strlen(s1);
 z2 = _strlen(s2);
 
@@ -46,7 +46,6 @@ return (00);
 return (w);
 }
 
-#include "holberton.h"
 /**
  * _strlen - return the length of the string, which includes the null bite
  *@s: the length of the string
