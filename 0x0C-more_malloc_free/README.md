@@ -1,0 +1,1 @@
+This folder reserved for malloc(sizeof(education * char) + 1)
