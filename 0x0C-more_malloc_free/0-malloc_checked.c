@@ -13,15 +13,15 @@ void *malloc_checked(unsigned int b)
 
 
 void *x;
+
 /* Write a F(x) that allocates memory using malloc*/
 
 x = malloc(sizeof(b));
 
-/* if malloc fails, the f(x) should cause*/
-/*normal process term. w/ a status of 98*/
-
-if (x == 00 || x >= INT_SIZE)
+if (x == NULL || x >= INT_SIZE)
 exit(98);
 
+/* if malloc fails, the f(x) should cause*/
+/*normal process term. w/ a status of 98*/
 return (x);
 }
