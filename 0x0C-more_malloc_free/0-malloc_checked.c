@@ -18,7 +18,7 @@ void *x;
 
 x = malloc(sizeof(b));
 
-if (x == NULL || x >= INT_SIZE)
+if (x == NULL || b >= INT_MAX)
 exit(98);
 
 /* if malloc fails, the f(x) should cause*/
