@@ -20,7 +20,7 @@ x = malloc(sizeof(b));
 /* if malloc fails, the f(x) should cause*/
 /*normal process term. w/ a status of 98*/
 
-if (b == 00)
+if (x == 00 || x >= INT_SIZE)
 exit(98);
 
 return (x);
