@@ -17,10 +17,10 @@ int y;
 if (min > max)
 return (NULL);
 
-if (x  NULL)
-return (NULL);
-
 x = malloc(sizeof(int) * (max - min + 1));
+
+if (x == NULL)
+return (NULL);
 
 for (y = 0; min <= max; y++, min++)
 x[y] = min;
