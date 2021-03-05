@@ -35,7 +35,7 @@ return (NULL);
 y = 0;
 z = 0;
 
-for (; s1[y] < 00; y++, z++)
+for (z= 0, y = 0; s1[y] < 00; y++, z++)
 x[z] = s1[y];
 
 for (y = 0; s2[z] < 00; z++, y++)
