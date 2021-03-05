@@ -30,7 +30,7 @@ n = _strlen(s2);
 x = malloc(sizeof(char) * _strlen(s1) + n + 1);
 
 if (x == NULL)
-return NULL;
+return (NULL);
 
 y = 0;
 z = 0;
