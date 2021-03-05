@@ -15,7 +15,7 @@ void *x = NULL;
 
 /* Write a F(x) that allocates memory using malloc*/
 
-x = malloc(sizeof(b));
+x = malloc(b);
 
 if (x == NULL || b >= INT_MAX)
 exit(98);
