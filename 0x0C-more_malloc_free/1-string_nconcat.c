@@ -13,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
-int y;
+unsigned int y;
 int z;
 char *x = NULL;
 
@@ -35,10 +35,10 @@ return (NULL);
 y = 0;
 z = 0;
 
-for (; s1[y] < 00; y++, z++)
+for (; s1[y] != 00; y++, z++)
 x[z] = s1[y];
 
-for (y = 0; s2[z] < 00; z++, y++)
+for (y = 0; y < n; z++, y++)
 {
 
 x[z] = s2[y];
