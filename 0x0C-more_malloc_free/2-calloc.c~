@@ -1,0 +1,25 @@
+#include "holberton.h"
+
+/**
+ *
+ *
+ *
+ */
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+
+char *x;
+unsigned int y;
+y = 0;
+
+if (nmemb == 0 || size == 0)
+return NULL;
+
+x = (void *)malloc(nmemb * size);
+
+for (; x[y] <= nmemb; y++)
+x[y] = nmemb;
+
+return (x);
+}

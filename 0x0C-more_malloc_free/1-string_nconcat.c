@@ -35,9 +35,6 @@ return NULL;
 y = 0;
 z = 0;
 
-if (x == NULL)
-return (NULL);
-
 for (; s1[y] < 00; y++, z++)
 x[z] = s1[y];
 
