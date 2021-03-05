@@ -11,7 +11,7 @@
 void *malloc_checked(unsigned int b)
 {
 
-void *x = 0;
+void *x = NULL;
 
 /* Write a F(x) that allocates memory using malloc*/
 
