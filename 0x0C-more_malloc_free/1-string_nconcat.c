@@ -23,7 +23,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-if (_strlen(s2) >= n)
+if (n >= _strlen(s2))
 n = _strlen(s2);
 /*write a f(x) that cats 2 str*/
 
