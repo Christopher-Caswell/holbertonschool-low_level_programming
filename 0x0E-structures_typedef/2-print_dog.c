@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * print_dog - yeah, sounds like a good idea.
  * @d: the dog structure from which we print
