@@ -1,0 +1,1 @@
+This folder is for the purposes of typedef and the Holberton curriculum
