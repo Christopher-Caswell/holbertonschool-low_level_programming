@@ -20,14 +20,14 @@ return (NULL);
 (*d).name = _strdup(name);
 if ((*d).name == NULL)
 {
-free (d);
+free(d);
 return (NULL);
 }
 (*d).owner = _strdup(owner);
 if ((*d).owner == NULL)
 {
 free((*d).name);
-free (d);
+free(d);
 return (NULL);
 }
 return (d);
