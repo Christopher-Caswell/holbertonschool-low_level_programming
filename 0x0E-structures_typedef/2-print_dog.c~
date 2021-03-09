@@ -1,0 +1,30 @@
+#include "dog.h"
+#include <stdio.h>
+
+/**
+ * print_dog - yeah, sounds like a good idea.
+ * @d: the dog structure from which we print
+ * Return: obviously, for more dogs
+ */
+
+void print_dog(struct dog *d)
+{
+
+if (d != NULL)
+{
+if (d->name == NULL)
+  printf("Name: (nil)");
+else
+printf("Name: %s\n", d->name);
+
+if (d->age == NULL)
+printf("Age: (nil)\n");
+else
+printf("Age: %s\n", d->age);
+
+if (d->owner == NULL)
+printf("Owner: (nil)");
+else
+printf("Owner: %s\n", d->owner);
+}
+}
