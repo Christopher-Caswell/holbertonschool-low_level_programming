@@ -1,0 +1,1 @@
+A directory containing "pointer to function" parameters as defined by the Holberton curriculum
