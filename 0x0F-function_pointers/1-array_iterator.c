@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * @array: an array of integers
+ * array_iterator - an array of integers
+ * @array: the above
  * @size: the size of the array
  * @action: the location to which we print
  * Return: a function execution, given as parameter
