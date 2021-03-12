@@ -20,7 +20,14 @@ for (; x < n; x++)
 {
 
 idk = va_arg(list, char*);
+{
+
+if (idk == NULL)
+printf("(nil)");
+else
 printf("%s", idk);
+}
+
 if (separator != NULL && x < n - 1)
 printf("%s", separator);
 
