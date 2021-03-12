@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * print_strings - Write a function that prints strings, followed by a 10
- * @sepaerator: the space between the strings
+ * @separator: the space between the strings
  * @n: the volume of strings
  * Return: strings, folllowed by a 10
  */
@@ -15,16 +15,16 @@ unsigned int x = 0;
 va_list list;
 char *idk;
 
-va_start (list, n);
+va_start(list, n);
 for (; x < n; x++)
 {
 
-idk = va_arg (list, char*);
+idk = va_arg(list, char*);
 printf("%s", idk);
 if (separator != NULL && x < n - 1)
 printf("%s", separator);
 
-va_end (list);
+va_end(list);
 }
 printf("\n");
 }
