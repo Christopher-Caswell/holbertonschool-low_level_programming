@@ -1,5 +1,5 @@
     section .data
-	fmt     db "%u  %s",10,0
+	fmt     db "%s", 17
 	msg1    db "Hello, Holberton",0
 
 	    section .text
