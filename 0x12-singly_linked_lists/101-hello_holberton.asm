@@ -1,5 +1,5 @@
     section .data
-	fmt     db "%s", 17
+	fmt     db "%s\n", 0
 	msg1    db "Hello, Holberton",0
 
 	    section .text
@@ -10,9 +10,6 @@ _start:
 	    mov  edx, msg1
 	    mov  esi, 1
 	    mov  edi, fmt
-	    mov  eax, 0
+	    mov  eax, 0  	; no f.p. args
 	    call printf
-
-	    mov  ebx, 0
-	    mov  eax, 1
-	    int  0x80
+	ret
