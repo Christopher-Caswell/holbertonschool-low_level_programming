@@ -20,10 +20,7 @@ for (; h != NULL; x++)
 
 if (!h->str)
 printf("[0] (nil)\n");
-
-if (h->str == NULL)
-return (0);
-
+else
 printf("[%d] %s\n", h->len, h->str);
 
 h = h->next;
