@@ -1,19 +1,16 @@
-segment .data
-	    msg db "Hello, Holberton", 0xd, 0xa, 0
-
-	segment .text
-	global main
-	extern ExitProcess
-
-	extern printf
-
+.section        .rodata
+	.LC0:
+	        .string "Hello Holberton"
+	        .text
+	        .globl  main
+	        .type   main, @function
 main:
-	    push    rbp
-	    mov     rbp, rsp
-	    sub     rsp, 32
-
-	    lea     rcx, [msg]
-	    call    printf
-
-	    xor     rax, rax
-	    call    ExitProcess
+	        pushq   %rbp
+	        movq    %rsp, %rbp
+	        movl    $.LC0, %edi
+	        call    puts
+	        popq    %rbp
+	        ret
+	        .size   main, .-main
+	        .ident  "GCC: (Ubuntu 4.8.4-2ubuntu1~14.04.4) 4.8.4"
+	        .section        .note.GNU-stack,"",@progbits
