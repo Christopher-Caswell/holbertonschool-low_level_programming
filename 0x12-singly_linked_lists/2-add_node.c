@@ -28,7 +28,7 @@ x->str = strdup(str);
 if (x->str == NULL)
 {
 
-free (x);
+free(x);
 return (NULL);
 }
 
