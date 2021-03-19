@@ -26,5 +26,6 @@ int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 int _strlen(char *s);
+void free_list(list_t *head);
 
 #endif
