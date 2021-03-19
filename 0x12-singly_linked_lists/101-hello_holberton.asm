@@ -11,4 +11,4 @@ _start:
 	mov  edi, fmt
 	mov  eax, 0
 	call printf
-reT
+ret
