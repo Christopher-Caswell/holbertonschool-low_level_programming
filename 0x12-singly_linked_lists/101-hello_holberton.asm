@@ -1,6 +1,7 @@
-.section        .rodata
+file   "test.c"
+	        .section        .rodata
 	.LC0:
-	        .string "Hello Holberton"
+	        .string "Hello, Holberton"
 	        .text
 	        .globl  main
 	        .type   main, @function
