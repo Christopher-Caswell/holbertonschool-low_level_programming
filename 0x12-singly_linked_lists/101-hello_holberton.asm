@@ -1,14 +1,19 @@
-    section .data
-	fmt db "%s", 10, 0
-	msg db "Hello, Holberton", 0
+segment .data
+	    msg db "Hello, Holberton", 0xd, 0xa, 0
 
-	section .text
+	segment .text
+	global main
+	extern ExitProcess
+
 	extern printf
-	global main, _start
-main:	
-_start:	
-	mov  esi, msg1
-	mov  edi, fmt
-	mov  eax, 0
-	call printf
-ret
+
+main:
+	    push    rbp
+	    mov     rbp, rsp
+	    sub     rsp, 32
+
+	    lea     rcx, [msg]
+	    call    printf
+
+	    xor     rax, rax
+	    call    ExitProcess
