@@ -8,7 +8,6 @@ main:
 	        pushq   %rbp
 	        movq    %rsp, %rbp
 	        movl    $.LC0, %edi
-	        call    puts
 	        popq    %rbp
 	        ret
 	        .size   main, .-main
