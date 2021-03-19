@@ -5,7 +5,7 @@
 
 /**
  * print_list - does what it says
- * @list_t: the list used in main to print
+ * @h: the list used in main to print
  * Return: the number of nodes
  */
 
