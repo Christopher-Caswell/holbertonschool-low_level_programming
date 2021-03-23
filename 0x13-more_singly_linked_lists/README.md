@@ -1,0 +1,1 @@
+Another folder whose sole purpose is for Holberton Curriculum in regard to linked lists.
