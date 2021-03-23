@@ -1,0 +1,34 @@
+#include "lists.h"
+#include <stdio.h>
+/**
+ * add_nodeint - adds node to front of list
+ * @n: added
+ * @head: where to add
+ * Return: head
+ */
+
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+
+listint_t *willy;
+
+if (head == NULL)
+{
+
+return (Null);
+}
+
+willy = malloc(sizeof(listint_t));
+
+if (willy == NULL)
+{
+
+free(willy);
+return (NULL);
+}
+
+willy->n = n;
+willy->next = *head;
+*head = willy;
+return (willy);
+}
