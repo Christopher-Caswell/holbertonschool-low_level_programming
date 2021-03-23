@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * print_list - does what it says
+ * print_listint - does what it says
  * @h: the int
  * Return: the number of nodes
  */
