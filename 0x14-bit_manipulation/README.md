@@ -1,0 +1,1 @@
+This folder reserved for the learning and utility of bit manipulation via the Holberton Curriculum
