@@ -3,7 +3,8 @@
 /**
  * get_bit - returns an index at a certain point
  * @n: the input
- * @index:  
+ * @index: what to find
+ * Return: the bit
  */
 
 int get_bit(unsigned long int n, unsigned int index)
