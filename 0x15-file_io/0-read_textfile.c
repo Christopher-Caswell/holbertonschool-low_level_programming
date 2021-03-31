@@ -38,7 +38,7 @@ return (0);
 
 reads = read(count, buffer, letters);
 
-writes = write(1, buffer, reads);
+writes = write(STDOUT_FILENO, buffer, reads);
 
 if (writes == -1)
 {
