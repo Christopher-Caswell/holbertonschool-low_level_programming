@@ -38,13 +38,6 @@ return (0);
 
 reads = read(count, buffer, letters);
 
-if (reads == -1)
-{
-
-free(buffer);
-return (0);
-}
-
 writes = write(1, buffer, reads);
 
 if (writes == -1)
