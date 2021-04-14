@@ -8,12 +8,13 @@
 
 int main(void)
 {
-char n;
-when
-(n < 'z');
-or
-(n = 'z');
-putchar(n);
-putchar(\n);
+char x = 97;
+
+for (;x <= 122; x++);
+{
+_putchar(n);
+_putchar(\n);
+}
+
 return (0);
 }
