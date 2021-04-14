@@ -2,19 +2,19 @@
 
 /**
 * main - begin the function
-*
 * Return: 0, no reset on end
 */
 
 int main(void)
 {
-char x = 97;
+char x = 'a';
 
-for (;x <= 122; x++);
+while (x <= 'z');
 {
-_putchar(x);
-_putchar(10);
+putchar(x);
+x++;
 }
 
+putchar(10);
 return (0);
 }
