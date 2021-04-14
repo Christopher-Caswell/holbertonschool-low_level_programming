@@ -12,8 +12,8 @@ char x = 97;
 
 for (;x <= 122; x++);
 {
-_putchar(n);
-_putchar(\n);
+_putchar(x);
+_putchar(10);
 }
 
 return (0);
