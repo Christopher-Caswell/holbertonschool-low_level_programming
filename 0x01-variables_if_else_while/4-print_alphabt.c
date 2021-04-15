@@ -2,7 +2,6 @@
 
 /**
 * main - function open
-*
 * Return: 0
 */
 
@@ -10,23 +9,22 @@ int main(void)
 
 {
 
-char i;
+char x;
 
-for i = (i = <= z);
-
+for (x = 97; x <= 122; x++)
 {
 
-if (i == "q" || i == "e")
+if (x == 113 || x == 101)
 
 continue;
 
 else
 
-putchar(i);
+putchar(x);
 
 }
 
-putchar(\n);
+putchar(10);
 
 return (0);
 
