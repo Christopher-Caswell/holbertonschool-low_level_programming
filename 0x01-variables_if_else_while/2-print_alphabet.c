@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 
 /**
 * main - begin the function
@@ -7,10 +7,11 @@ B#include <stdio.h>
 
 int main(void)
 {
-char x = 97;
+char x;
 
-for (;x <= 122; x++);
+for (x = 97; x <= 122; x++)
 {
+
 putchar(x);
 }
 
