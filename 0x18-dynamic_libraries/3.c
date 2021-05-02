@@ -10,7 +10,7 @@ char *_strcat(char *dest, char *src)
 {
 (void)dest;
 (void)src;
-return;
+return(NULL);
 }
 
 /**
@@ -25,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 (void)src;
 (void)dest;
 (void)n;
-return;
+return(NULL);
 }
 
 /**
@@ -40,7 +40,7 @@ char *_strncpy(char *dest, char *src, int n)
 (void)dest;
 (void)src;
 (void)n;
-return;
+return(NULL);
 }
 
 /**
@@ -53,7 +53,7 @@ int _strcmp(char *s1, char *s2)
 {
 (void)s1;
 (void)s2;
-return;
+return(0);
 }
 
 /**
@@ -68,5 +68,5 @@ char *_memset(char *s, char b, unsigned int n)
 (void)n;
 (void)s;
 (void)b;
-return;
+return(NULL);
 }

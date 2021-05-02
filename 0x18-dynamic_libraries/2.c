@@ -8,7 +8,7 @@
 int _isdigit(int c)
 {
 (void)c;
-return;
+return(0);
 }
 
 /**
@@ -19,7 +19,7 @@ return;
 int _strlen(char *s)
 {
 (void)s;
-return;
+return(0);
 }
 
 /**
@@ -30,7 +30,6 @@ return;
 void _puts(char *s)
 {
 (void)s;
-return;
 }
 
 /**
@@ -43,7 +42,7 @@ char *_strcpy(char *dest, char *src)
 {
 (void)dest;
 (void)src;
-return;
+return(NULL);
 }
 
 /**
@@ -54,5 +53,5 @@ return;
 int _atoi(char *s)
 {
 (void)s;
-return;
+return(0);
 }

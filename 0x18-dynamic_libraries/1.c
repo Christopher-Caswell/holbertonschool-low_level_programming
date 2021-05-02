@@ -8,7 +8,7 @@
 int _putchar(char c)
 {
 (void)c;
-return;
+return(0);
 }
 
 /**
@@ -19,7 +19,7 @@ return;
 int _islower(int c)
 {
 (void)c;
-return;
+return(0);
 }
 
 /**
@@ -30,7 +30,7 @@ return;
 int _isalpha(int c)
 {
 (void)c;
-return;
+return(0);
 }
 
 /**
@@ -41,7 +41,7 @@ return;
 int _abs(int n)
 {
 (void)n;
-return;
+return(0);
 }
 
 /**
@@ -52,5 +52,5 @@ return;
 int _isupper(int c)
 {
 (void)c;
-return;
+return(0);
 }
