@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * _strcat - void
  * @dest: void

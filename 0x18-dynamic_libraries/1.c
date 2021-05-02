@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * _putchar - void
  * @c: void
