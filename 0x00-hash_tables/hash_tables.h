@@ -36,10 +36,6 @@ typedef struct hash_table_s
      hash_node_t **array;
 } hash_table_t;
 
-/**
-* The functions in the project
-*/
-
 hash_table_t *hash_table_create(unsigned long int size);
 
 #endif /* Hash */
