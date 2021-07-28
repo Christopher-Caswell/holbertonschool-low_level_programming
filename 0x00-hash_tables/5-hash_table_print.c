@@ -8,36 +8,43 @@
 */
 
 void hash_table_print(const hash_table_t *ht)
+{    
+unsigned long int x;
+hash_node_t *polyp = NULL;
+int y = 0;
+
+if (ht == NULL)
 {
-    unsigned long int x;
-    hash_node_t *polyp = NULL;
-    int y = 0;
+return;
+}
 
-    if (ht == NULL)
-    {
-        return;
-    }
+printf("{");
+for (x = 0; x < ht->size; x++)
+{
 
-    printf("{");
-    for (x = 0; x < ht->size; x++)
-    {
-        if (ht->array[x] != NULL && y > 0)
-        {
-            printf(", ");
-        }
+if (ht->array[x] != NULL && y > 0)
+{
 
-        polyp = ht->array[x];
+printf(", ");
+}
 
-        while (polyp != NULL)
-        {
-        y++;
-        printf("\'%s\': \'%s\'", polyp->key, polyp->value);
-        if (polyp->next != NULL)
-        {
-            printf(", ");
-        }
-        polyp = polyp->next;
-        }
-    }
-    printf("}\n");
+polyp = ht->array[x];
+
+while (polyp != NULL)
+{
+
+y++;
+printf("\'%s\': \'%s\'", polyp->key, polyp->value);
+
+if (polyp->next != NULL)
+{
+
+printf(", ");
+}
+
+polyp = polyp->next;
+}
+}
+
+printf("}\n");
 }
