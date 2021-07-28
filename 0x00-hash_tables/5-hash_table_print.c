@@ -21,7 +21,7 @@ void hash_table_print(const hash_table_t *ht)
     printf("{");
     for (x = 0; x < ht->size; x++)
     {
-        if (ht->array[x] != NULL && y < ht->array[x]->size && y > 0)
+        if (ht->array[x] != NULL && y > 0)
         {
             printf(", ");
         }
