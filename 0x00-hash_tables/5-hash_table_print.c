@@ -17,6 +17,7 @@ void hash_table_print(const hash_table_t *ht)
         return;
     }
 
+    printf("{");
     for (x = 0; x < ht->size; x++)
     {
         polyp = ht->array[x];
@@ -26,4 +27,5 @@ void hash_table_print(const hash_table_t *ht)
         polyp = polyp->next;
         }
     }
+    printf("}\n");
 }
