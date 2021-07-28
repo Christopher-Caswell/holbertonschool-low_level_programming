@@ -4,7 +4,7 @@
 * key_index - return the index of a key in a hash table
 * @key: the key to look for
 * @size: the size of the hash table
-* 
+*
 * Return: the index of the key in the hash table
 */
 
