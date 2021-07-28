@@ -9,7 +9,7 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-    int x;
+    unsigned long int x;
     hash_node_t *polyp;
 
     if (ht == NULL)
@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
         polyp = ht->array[x];
         while (polyp != NULL)
         {
-        printf("\'%s\': \'%d\',", polyp->key, polyp->value);
+        printf("\'%s\': \'%s\',", polyp->key, polyp->value);
         polyp = polyp->next;
         }
     }
