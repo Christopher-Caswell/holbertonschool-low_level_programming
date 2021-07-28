@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * djb2 hash function
- * @param key
+ * hash_djb2 - hash function
+ * @str: string to hash
  * Return: hash value
 */
 
