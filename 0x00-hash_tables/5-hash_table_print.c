@@ -10,14 +10,20 @@
 void hash_table_print(const hash_table_t *ht)
 {
     int x;
+    hash_node_t *polyp;
 
     if (ht == NULL)
     {
-        return NULL;
+        return;
     }
 
     for (x = 0; x < ht->size; x++)
     {
-        printf("\'%s\': \'%d\',", ht->array[x]->key, ht->array[x]->value);
+        polyp = ht->array[x];
+        while (polyp != NULL)
+        {
+        printf("\'%s\': \'%d\',", polyp->key, polyp->value);
+        polyp = polyp->next;
+        }
     }
 }
