@@ -44,9 +44,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     strcpy(newguy->value, value);
     newguy->next = NULL;
 
-    if (ht->table[x] == NULL || ht->table[x]->next == NULL)
+    if (ht->array[x] == NULL || ht->array[x]->next == NULL)
     {
-        ht->table[x] = newguy;
+        ht->array[x] = newguy;
     }
     else
     {
@@ -57,6 +57,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
         }
         temp->next = newguy;
     }
-    ht->count++;
     return 1;
 }
