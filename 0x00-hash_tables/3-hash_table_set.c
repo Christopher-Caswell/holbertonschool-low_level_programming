@@ -50,7 +50,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     }
     else
     {
-        temp = ht->table[x];
+        temp = ht->array[x];
         while (temp->next != NULL)
         {
             temp = temp->next;
