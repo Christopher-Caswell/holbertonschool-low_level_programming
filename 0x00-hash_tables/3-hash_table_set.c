@@ -13,10 +13,10 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 
-    int x;
+    unsigned long int x;
     hash_node_t *newguy = NULL, *temp = NULL;
 
-    if (ht == NULL || key == NULL || value == NULL || strcmp(key, "") == 0))
+    if (ht == NULL || key == NULL || value == NULL || strcmp(key, "") == 0)
     {
         return 0;
     }
