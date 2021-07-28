@@ -16,46 +16,32 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     int x;
     hash_node_t *newguy = NULL, *temp = NULL;
 
-    if (ht == NULL || key == NULL || value == NULL)
+    if (ht == NULL || key == NULL || value == NULL || strcmp(key, "") == 0))
     {
         return 0;
     }
 
-    newguy = (hash_node_t *)malloc(sizeof(hash_node_t));
+    newguy = malloc(sizeof(hash_node_t));
     if (newguy == NULL)
     {
         return 0;
     }
 
-    newguy->key = (char *)malloc(strlen(key) + 1);
-    if (newguy->key == NULL)
-    {
-        free(newguy);
-        return 0;
-    }
-    strcpy(newguy->key, key);
-    newguy->value = (char *)malloc(strlen(value) + 1);
-    if (newguy->value == NULL)
-    {
-        free(newguy->key);
-        free(newguy);
-        return 0;
-    }
-    strcpy(newguy->value, value);
+    newguy->value = (char *) strdup(value);
+    newguy->key = (char *) strdup(key);
     newguy->next = NULL;
 
-    if (ht->array[x] == NULL || ht->array[x]->next == NULL)
+    x = key_index((char *) key, ht->size);
+
+    if (ht->array[x] == NULL || strcmp(ht->array[x]->key, key) == 0)
     {
         ht->array[x] = newguy;
     }
     else
     {
         temp = ht->array[x];
-        while (temp->next != NULL)
-        {
-            temp = temp->next;
-        }
-        temp->next = newguy;
+        newguy->next = temp;
+        ht->array[x] = newguy;
     }
     return 1;
 }
