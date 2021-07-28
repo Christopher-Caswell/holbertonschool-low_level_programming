@@ -5,7 +5,7 @@
 * @ht: The hash table
 * @key: The key
 *
-* Return: The value of the key in the hash table or NULL if the key is not found
+* Return: The value of the key in ht or NULL if the key is not found
 */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
@@ -23,7 +23,7 @@ sojourner = ht->array[x];
 
 if (sojourner == NULL)
 return (NULL);
-    
+
 while (sojourner != NULL)
 {
 if (strcmp(sojourner->key, key) == 0)
@@ -34,6 +34,6 @@ sojourner = sojourner->next;
 
 if (strcmp(sojourner->key, key) == 0)
 return (sojourner->value);
-        
+
 return (NULL);
 }
