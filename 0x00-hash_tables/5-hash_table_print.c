@@ -11,6 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 {
     unsigned long int x;
     hash_node_t *polyp = NULL;
+    int y = 0;
 
     if (ht == NULL)
     {
@@ -20,9 +21,16 @@ void hash_table_print(const hash_table_t *ht)
     printf("{");
     for (x = 0; x < ht->size; x++)
     {
+        if (ht->array[x] != NULL && y < ht->array[x]->size && y > 0)
+        {
+            printf(", ");
+        }
+
         polyp = ht->array[x];
+
         while (polyp != NULL)
         {
+        y++;
         printf("\'%s\': \'%s\'", polyp->key, polyp->value);
         if (polyp->next != NULL)
         {
