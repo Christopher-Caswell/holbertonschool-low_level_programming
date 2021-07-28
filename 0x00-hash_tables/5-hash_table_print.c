@@ -24,7 +24,7 @@ void hash_table_print(const hash_table_t *ht)
         while (polyp != NULL)
         {
         printf("\'%s\': \'%s\',", polyp->key, polyp->value);
-        polyp = polyp->next;
+        polyp = NULL;
         }
     }
     printf("}\n");
