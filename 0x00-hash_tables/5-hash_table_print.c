@@ -23,8 +23,12 @@ void hash_table_print(const hash_table_t *ht)
         polyp = ht->array[x];
         while (polyp != NULL)
         {
-        printf("\'%s\': \'%s\',", polyp->key, polyp->value);
-        polyp = NULL;
+        printf("\'%s\': \'%s\'", polyp->key, polyp->value);
+        if (polyp->next != NULL)
+        {
+            printf(", ");
+        }
+        polyp = polyp->next;
         }
     }
     printf("}\n");
