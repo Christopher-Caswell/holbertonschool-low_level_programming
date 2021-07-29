@@ -36,9 +36,18 @@ newguy->next = NULL;
 
 x = key_index((const unsigned char *)(key), ht->size);
 
-if (ht->array[x] == NULL || strcmp(ht->array[x]->key, key) == 0)
+if (ht->array[x] == NULL)
 {
 
+ht->array[x] = newguy;
+}
+
+else if (strcmp(ht->array[x]->key, key) == 0)
+{
+
+free(ht->array[x]->value);
+free(ht->array[x]->key);
+free(ht->array[x]);
 ht->array[x] = newguy;
 }
 
