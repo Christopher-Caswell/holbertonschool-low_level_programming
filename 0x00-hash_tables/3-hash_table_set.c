@@ -50,6 +50,5 @@ newguy->next = temp;
 ht->array[x] = newguy;
 }
 
-free(newguy);
 return (1);
 }
