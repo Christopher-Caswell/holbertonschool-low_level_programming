@@ -24,11 +24,11 @@ node = ht->array[i];
 while (node != NULL)
 {
 
-noods = node;
 node = node->next;
 free(noods->key);
 free(noods->value);
 free(noods);
+noods = node;
 }
 }
 
