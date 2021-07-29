@@ -29,7 +29,6 @@ node = node->next;
 free(noods->key);
 free(noods->value);
 free(noods);
-free(node);
 }
 }
 
